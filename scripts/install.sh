@@ -14,7 +14,7 @@ fi
 
 
 ### NODE
-sudo npm i -g @vue/cli
+# sudo npm i -g @vue/cli
 
 
 ### DOCKER
