@@ -6,7 +6,6 @@ python-virtualenv
 python-numpy
 python-scipy
 python-matplotlib
-python-pillow
 jupyter
 vim
 zsh
