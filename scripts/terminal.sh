@@ -1,4 +1,4 @@
-config_folder=$HOME/.dotfiles/config
+config_folder=$HOME/.config/dotfiles/config
 
 rm -rf $HOME/.vimrc $HOME/.zshrc
 
