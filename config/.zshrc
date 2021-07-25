@@ -1,9 +1,8 @@
 ### Exports
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/home/$USER/.oh-my-zsh"
-export ELECTRON_TRASH=gio
 export BROWSER=chromium
-export EDITOR=vim
+export EDITOR=vi
 
 
 ### Variables
@@ -11,7 +10,7 @@ ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 
-plugins=(git docker autoupdate zsh-syntax-highlighting zsh-completions)
+plugins=(git docker autoupdate zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
 
 
 ### Commands
@@ -22,6 +21,7 @@ autoload -U compinit && compinit
 
 
 ### Aliases
+alias vi="nvim"
 alias pls="sudo"
 alias please="sudo"
 alias murder='/bin/rm -rf'
