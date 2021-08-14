@@ -1,10 +1,23 @@
-pkgs_folder=$HOME/.dotfiles/pkgs
+pkgs_folder=$HOME/.config/dotfiles/pkgs
 
+yay -S --needed $(cat $pkgs_folder/yay)
 
 ### PACKAGES
 if command -v pacman &> /dev/null
 then
+    # curl -s 'https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/x86_64/home_ungoogled_chromium_Arch.key' | sudo pacman-key -a -
+    # echo '
+    # [home_ungoogled_chromium_Arch]
+    # SigLevel = Required TrustAll
+    # Server = https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/$arch' | sudo tee --append /etc/pacman.conf
+    # sudo pacman -Sy
+
     sudo pacman -S --needed $(cat $pkgs_folder/pacman)
+fi
+
+if command -v yay &> /dev/null
+then
+    yay -S --needed $(cat $pkgs_folder/yay)
 fi
 
 if command -v apt &> /dev/null
@@ -14,7 +27,7 @@ fi
 
 
 ### NODE
-# sudo npm i -g @vue/cli
+# sudo npm i -g @vue/cli fastify-cli
 
 
 ### DOCKER

@@ -8,6 +8,7 @@ python-scipy
 python-matplotlib
 jupyter
 vim
+neovim
 zsh
 docker
 docker-compose
@@ -15,3 +16,8 @@ mc
 ranger
 htop
 git
+evince
+ungoogled-chromium
+sl
+cowsay
+tldr
